@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    overflow: hidden;
+}
+
+/*portrait styling*/
+
+@media all and (orientation: portrait) {
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 220px auto;
+        grid-template-rows: 65px 2fr 110px;
+        grid-template-areas:
+                "sidebar header"
+                "sidebar content"
+                "sidebar footer";
+    }
+
+    /*sidebar styling*/
+
+    aside {
+        grid-area: sidebar;
+        background-color: #4D394A;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #title {
+        color: white;
+        font-size: 18px;
+        margin: 15px 15px 2px 15px;
+    }
+    #title img, .sections img {
+        float: right;
+        vertical-align: middle;
+    }
+    #user {
+        color: #C2BAC1;
+        font-size: 15px;
+    }
+    #ball {
+        float: left;
+        vertical-align: middle;
+        margin: 2px 5px 18px 15px;
+    }
+    #jump {
+        margin: 0px 0px 15px 10px;
+    }
+    .sections {
+        color: #d4ccd3;
+        margin: 20px 15px 2px 15px;
+        font-size: 15px;
+    }
+    aside ul {
+        list-style-type: none;
+    }
+    aside li {
+        color: #C2BAC1;
+        padding: 4px 40px 4px 15px;
+        font-size: 15px;
+    }
+    aside li img {
+        float: left;
+        vertical-align: middle;
+        margin: 3px 5px 0 0;
+    }
+    #random {
+        background-color: #4B968A;
+        color: #e9e1e8;
+    }
+    aside li:hover {
+        background-color: #413244;
+        width: 220px;
+    }
+    #add {
+        margin: 20px 15px 2px 0px;
+    }
+
+    /*content section styling*/
+
+    .header {
+        grid-area: header;
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+    .header h4 {
+        margin: 2px 0px 0px 10px;
+        display: inline-block;
+    }
+    .left-icons {
+        position: absolute;
+        margin-left: 10px;
+    }
+    .right-icons {
+        display: inline-block;
+        position: absolute;
+        margin-top: 5px;
+        right: 15px;
+    }
+    .right-icons img {
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+    .responsive-icons {
+        display: none;
+    }
+    .content {
+        grid-area: content;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+        color: #6e6e6e;
+        padding-right: 15px;
+    }
+    .content li {
+        width: 100%;
+        padding: 40px 0 40px 20px;
+        border-bottom: 1px solid lightgray;
+    }
+    footer {
+        grid-area: footer;
+    }
+    .chat {
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        margin-left: 15px;
+        width: 95%;
+        height: 77%;
+    }
+    form {
+        height: 47%;
+    }
+    #new_message {
+        width: 93%;
+        height: 40%;
+        padding: 10px 10px 10px 50px;
+        border-radius: 5px 5px 0px 0px;
+        outline: none;
+        border: none;
+        resize: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        font-size: 18px;
+    }
+    #button {
+        visibility: hidden;
+    }
+    .texticons {
+        background-color: #F8F8F8;
+        border-radius: 0px 0px 5px 5px;
+        height: 45px;
+    }
+    #textbar {
+        margin: 13px 0px 0px 10px;
+    }
+    #textbar2 {
+        position: absolute;
+        right: 4%;
+        margin-top: 4px;
+    }
+    #texticons2 {
+        display: none;
+    }
+}
+
+/*landscape styling*/
+
+@media all and (orientation: landscape) {
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 220px auto;
+        grid-template-rows: 65px 2fr 110px;
+        grid-template-areas:
+                "sidebar header"
+                "sidebar content"
+                "sidebar footer";
+    }
+
+    /*sidebar styling*/
+
+    aside {
+        grid-area: sidebar;
+        background-color: #4D394A;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #title {
+        color: white;
+        font-size: 18px;
+        margin: 15px 15px 2px 15px;
+    }
+    #title img, .sections img {
+        float: right;
+        vertical-align: middle;
+    }
+    #user {
+        color: #C2BAC1;
+        font-size: 15px;
+    }
+    #ball {
+        float: left;
+        vertical-align: middle;
+        margin: 2px 5px 18px 15px;
+    }
+    #jump {
+        margin: 0px 0px 15px 10px;
+    }
+    .sections {
+        color: #d4ccd3;
+        margin: 20px 15px 2px 15px;
+        font-size: 15px;
+    }
+    aside ul {
+        list-style-type: none;
+    }
+    aside li {
+        color: #C2BAC1;
+        padding: 4px 40px 4px 15px;
+        font-size: 15px;
+    }
+    aside li img {
+        float: left;
+        vertical-align: middle;
+        margin: 3px 5px 0 0;
+    }
+    #random {
+        background-color: #4B968A;
+        color: #e9e1e8;
+    }
+    aside li:hover {
+        background-color: #413244;
+        width: 220px;
+    }
+    #add {
+        margin: 20px 15px 2px 0px;
+    }
+
+    /*content section styling*/
+
+    .header {
+        grid-area: header;
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+    .header h4 {
+        margin: 2px 0px 0px 10px;
+        display: inline-block;
+    }
+    .left-icons {
+        position: absolute;
+        margin-left: 10px;
+    }
+    .right-icons {
+        display: inline-block;
+        position: absolute;
+        margin-top: 5px;
+        right: 15px;
+    }
+    .right-icons img {
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+    .responsive-icons {
+        display: none;
+    }
+    .content {
+        grid-area: content;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+        color: #6e6e6e;
+        padding-right: 15px;
+    }
+    .content li {
+        width: 100%;
+        padding: 40px 0 40px 20px;
+        border-bottom: 1px solid lightgray;
+    }
+    footer {
+        grid-area: footer;
+    }
+    .chat {
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        margin-left: 15px;
+        width: 95%;
+        height: 77%;
+    }
+    form {
+        height: 47%;
+    }
+    #new_message {
+        width: 93%;
+        height: 40%;
+        padding: 10px 10px 10px 50px;
+        border-radius: 5px 5px 0px 0px;
+        outline: none;
+        border: none;
+        resize: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        font-size: 18px;
+    }
+    #button {
+        visibility: hidden;
+    }
+    .texticons {
+        background-color: #F8F8F8;
+        border-radius: 0px 0px 5px 5px;
+        height: 45px;
+    }
+    #textbar {
+        margin: 13px 0px 0px 10px;
+    }
+    #textbar2 {
+        position: absolute;
+        right: 4%;
+        margin-top: 4px;
+    }
+    #texticons2 {
+        display: none;
+    }
+}

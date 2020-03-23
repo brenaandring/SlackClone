@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/js/chat.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" media="all and (max-width: 750px)" href="/css/small.css"/>
+        <link rel="stylesheet" media="all and (min-width: 751px)" href="/css/large.css"/>
+        <link rel="icon" type="image/png" href="/public/images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Slack | random | The North Face</title>
+    </head>
+    <body>
+        <div class="container">
+            <aside>
+                <p id="title">The North Face <img src="/images/alarm.png" alt="image of alarm icon"></p>
+                <img src="/images/ball.png" id="ball" alt="image of ball icon"><p id="user"></p>
+                <img src="/images/jump.png" id="jump" alt="image of jump icon">
+                <ul>
+                    <li><img src="/images/say.png" alt="image of say icon">  Threads</li>
+                    <li><img src="/images/app.png" alt="image of app icon">  Apps</li>
+                </ul>
+                <p class="sections">Channels <img src="/images/plus.png" alt="image of plus icon"></p>
+                <ul>
+                    <li># general</li>
+                    <li># events</li>
+                    <li># product_design</li>
+                    <li># software_engineers</li>
+                    <li># northface_sf</li>
+                    <li id="random"># random</li>
+                    <li id="add">+ Add a channel</li>
+                </ul>
+                <p class="sections">Direct Messages <img src="/images/plus.png" alt="image of plus icon"></p>
+                <ul>
+                    <li><img src="/images/heart.png" alt="image of heart icon">Slackbot</li>
+                    <li><img src="/images/ball.png" alt="image of ball icon"><p id="user2"></li>
+                    <li id="add">+ Invite people</li>
+                </ul>
+                <p class="sections">Recent Apps</p>
+                <ul>
+                    <li>+ Install Google Calendar</li>
+                    <li>+ Connect Google Drive</li>
+                    <li>+ Add more apps</li>
+                </ul>
+            </aside>
+            <div class="header">
+                <h4>#random</h4>
+                <div class="left-icons">
+                    <img src="/images/star.png" alt="image of star icon"> |
+                    <img src="/images/user.png" alt="image of user icon"> |
+                    <img src="/images/pin.png" alt="image of pin icon"> | Let's not talk about work, okay?
+                </div>
+                <div class="right-icons">
+                    <img src="/images/phone.png" alt="image of phone icon">
+                    <img src="/images/info.png" alt="image of info icon">
+                    <img src="/images/setting.png" alt="image of setting icon">
+                    <img src="/images/search.png" alt="image of search icon">
+                    <img src="/images/at.png" alt="image of @ icon">
+                    <img src="/images/star2.png" alt="image of star icon">
+                    <img src="/images/dots.png" alt="image of dots icon">
+                </div>
+                <!--only displays on mobile and tablets STARTS-->
+                <div class="responsive-icons">
+                    <img src="/images/search2.png" alt="image of phone icon">
+                    <img src="/images/dots.png" alt="image of phone icon">
+                </div>
+                <!--only displays on mobile and tablets ENDS-->
+            </div>
+            <ul class="content">
+            </ul>
+            <footer>
+                <div class="chat">
+                    <form name="messages" id="myform">
+                        <input id="new_message" type="text" placeholder="Message #random"/>
+                        <input type="submit" id="button"/>
+                    </form>
+                    <div class="texticons">
+                        <img src="/images/textbar.png" id="textbar" alt="image of text icon">
+                        <img src="/images/textbar2.png" id="textbar2" alt="image of text icon">
+                    </div>
+                    <!--only displays on mobile and tablets STARTS-->
+                    <img src="/images/texticons2.png" id="texticons2" alt="image of text icons">
+                    <!--only displays on mobile and tablets ENDS-->
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
