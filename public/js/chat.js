@@ -1,7 +1,7 @@
 $(document).ready(function () {
     const socket = io.connect();
-    const name = prompt('What is your first and last name?');
-    if (name === null) {
+    const name = prompt('Please enter your first and last name! Otherwise, you will show up as a blank user due to prompt ;D');
+    if (name == null) {
         return;
     }
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
 
     socket.on('user_disconnect', function (data) {
-        $(".content").append("<p style='color:lightgray'>" + data.name + " has left the channel" + "</p>");
+        $(".content").append("<li>" + "<p style='color:lightgray'>" + data.name + " has left the channel" + "</p>");
     });
 
     socket.on('display_new_user', function (data) {
