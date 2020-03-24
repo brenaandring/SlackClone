@@ -12,7 +12,7 @@
         height: 100vh;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 50px 2fr 65px;
+        grid-template-rows: 50px 2fr 120px;
         grid-template-areas:
                 "header"
                 "content"
@@ -54,7 +54,7 @@
         padding-right: 15px;
     }
     .content li {
-        width: 100%;
+        width: 96%;
         padding: 20px 0 20px 20px;
         border-bottom: 1px solid lightgray;
     }
@@ -64,7 +64,7 @@
     }
     .chat {
         width: 95%;
-        height: 90%;
+        height: 60%;
     }
     form {
         height: 47%;
@@ -100,7 +100,7 @@
         height: 100vh;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 50px 2fr 65px;
+        grid-template-rows: 50px 2fr 120px;
         grid-template-areas:
                 "header"
                 "content"
@@ -142,7 +142,7 @@
         padding-right: 15px;
     }
     .content li {
-        width: 100%;
+        width: 96%;
         padding: 20px 0 20px 20px;
         border-bottom: 1px solid lightgray;
     }
@@ -152,7 +152,7 @@
     }
     .chat {
         width: 95%;
-        height: 90%;
+        height: 60%;
     }
     form {
         height: 50%;
