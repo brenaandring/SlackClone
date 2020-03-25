@@ -19,3 +19,5 @@ large devices, landscape and portrait.
 <br>Git
 <br>GitHub
 
+http://slackclone.brenaandring.com
+
