@@ -51,7 +51,7 @@ $(function() {
     $('messages').each(function() {
         $(this).find('messages').keypress(function(e) {
             // Enter pressed?
-            if(e.which == 10 || e.which == 13) {
+            if(e.which === 10 || e.which === 13) {
                 this.messages.submit();
             }
         });
